@@ -1,0 +1,35 @@
+package main
+
+import (
+
+"log"
+
+"net/http"
+
+"github.com/gorilla/mux"
+
+func main() {
+
+router := mux. NewRouter()
+
+// Define API endpoints
+
+router.HandleFunc("/api/ learn",
+
+LearnHandler). Methods("POST")
+
+// Start the server
+
+log.Fatal(http. ListenAndServe (":8080", router)) {
+
+func LearnHandler(w
+
+http. ResponseWriter, r
+
+*http.Request) {
+
+// Implement AI learning
+
+logic here w.WriteHeader(http.Status0K) w.Write([]byte ("Learning session started"))
+
+{י
